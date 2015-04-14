@@ -1,0 +1,9 @@
+<h2><%= @entry.author %></h2>
+<img src= "http://<%= @entry.photo_url %>">
+
+
+<a href="/entries/<%=@entry.id%>/edit">Update this entry</a>
+
+<%= form_tag entry_path(@entry), method: "delete" do %> 
+	<%= submit_tag("destroy") %>
+<% end %>

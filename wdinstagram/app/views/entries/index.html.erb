@@ -1,0 +1,10 @@
+<h> WDINSTAGRAM ENTRIES </h>
+
+<ul>
+<% @entries.each do |entry| %>
+<li> Author: <a href="/entries/<%= entry.id %>"> <%= entry.author%></a>
+</li>
+	<% end %>
+	</ul>
+
+<a href="/entries/new">Make a New Entry</a>
